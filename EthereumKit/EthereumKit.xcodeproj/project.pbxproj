@@ -118,6 +118,7 @@
 		58AAA7C99F4D8FD7DF51C749 /* AddressValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA4CC1551836BE97FA9EA /* AddressValidatorTests.swift */; };
 		58AAABF92F0BD40996C36D0F /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAD5B009D6666F3821F02 /* Signal.swift */; };
 		58AAAF70BEF433B84C1AC0CD /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA69FB6E04728EDC5A525 /* Protocols.swift */; };
+		B5B452A2229FE50C0032BDB8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B452A1229FE50C0032BDB8 /* Test.swift */; };
 		D045FC22221C1A290009BEF6 /* EncryptionHandshakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045FC21221C1A290009BEF6 /* EncryptionHandshakeTests.swift */; };
 		D07C3ED3221ACBDA0081DCD2 /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C3ED2221ACBDA0081DCD2 /* Capability.swift */; };
 		D0B13ED9222504A700C7C2CA /* AESCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B13ED8222504A700C7C2CA /* AESCipher.swift */; };
@@ -261,6 +262,7 @@
 		58AAAD5B009D6666F3821F02 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		58AAAE7DC330A2628E515477 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		596741140BF72953EA371834 /* Pods_EthereumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B452A1229FE50C0032BDB8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		D045FC21221C1A290009BEF6 /* EncryptionHandshakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionHandshakeTests.swift; sourceTree = "<group>"; };
 		D07C3ED2221ACBDA0081DCD2 /* Capability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capability.swift; sourceTree = "<group>"; };
 		D0B13ED8222504A700C7C2CA /* AESCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESCipher.swift; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 		3A3B59A6216B1B13001C5E99 /* EthereumKit */ = {
 			isa = PBXGroup;
 			children = (
+				B5B452A0229FE4D10032BDB8 /* Web3 */,
 				11B358D909B2539577DCF7E9 /* Api */,
 				D0CC3B7321F97535006C0FF9 /* Spv */,
 				11B350B2C033D8927DDDC0D3 /* Geth */,
@@ -510,6 +513,14 @@
 				596741140BF72953EA371834 /* Pods_EthereumKitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B452A0229FE4D10032BDB8 /* Web3 */ = {
+			isa = PBXGroup;
+			children = (
+				B5B452A1229FE50C0032BDB8 /* Test.swift */,
+			);
+			path = Web3;
 			sourceTree = "<group>";
 		};
 		D02934432213E1A000ED63C6 /* Connection */ = {
@@ -1039,6 +1050,7 @@
 				2FA5D28E7F979BB283BE331D /* EthereumLog.swift in Sources */,
 				2FA5D6648F420D546262B400 /* Block.swift in Sources */,
 				2FA5D1952F414C9588E326B3 /* EtherscanApiProvider.swift in Sources */,
+				B5B452A2229FE50C0032BDB8 /* Test.swift in Sources */,
 				11B35776F4FF3AFEBC314BA5 /* MainNet.swift in Sources */,
 				11B35B65C97F913BD1A1A642 /* HandshakeTask.swift in Sources */,
 				11B3541D943BA9C17AC16FC5 /* HandshakeTaskHandler.swift in Sources */,

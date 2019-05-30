@@ -44,6 +44,7 @@ end
 target :EthereumKitDemo do
   project 'EthereumKitDemo/EthereumKitDemo'
   common_pods
+  pod 'Web3swift.pod', :git => 'https://github.com/abaikirov/web3swift.git', :branch => 'develop'
 end
 
 target :EthereumKitTests do

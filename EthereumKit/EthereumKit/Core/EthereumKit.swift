@@ -21,6 +21,10 @@ public class EthereumKit {
 
     public let uniqueId: String
     public let logger: Logger
+  
+  // TODO: Delete this. Only for test
+    public var privateKey: Data!
+  //////////////////////////////
 
     init(blockchain: IBlockchain, transactionManager: TransactionManager, addressValidator: IAddressValidator, transactionBuilder: TransactionBuilder, state: EthereumKitState = EthereumKitState(), address: Data, uniqueId: String, logger: Logger) {
         self.blockchain = blockchain
@@ -224,7 +228,11 @@ extension EthereumKit {
 
         let addressValidator: IAddressValidator = AddressValidator()
         let ethereumKit = EthereumKit(blockchain: blockchain, transactionManager: transactionManager, addressValidator: addressValidator, transactionBuilder: transactionBuilder, address: address, uniqueId: uniqueId, logger: logger)
-
+      
+      // TODO: Delete this
+        ethereumKit.privateKey = privateKey
+      ////////////////////////////////////
+      
         blockchain.delegate = ethereumKit
         transactionManager.delegate = ethereumKit
 

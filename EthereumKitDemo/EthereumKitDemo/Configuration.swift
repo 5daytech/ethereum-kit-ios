@@ -4,7 +4,7 @@ class Configuration {
     static let shared = Configuration()
 
     let syncMode: SyncMode = .api
-    let networkType: EthereumKit.NetworkType = .mainNet
+    let networkType: EthereumKit.NetworkType = .ropsten
     let minLogLevel: Logger.Level = .error
 
     let defaultsWords = ""

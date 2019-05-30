@@ -21,8 +21,11 @@ class MainController: UITabBarController {
         let receiveNavigation = UINavigationController(rootViewController: ReceiveController())
         receiveNavigation.tabBarItem.title = "Receive"
         receiveNavigation.tabBarItem.image = UIImage(named: "Receive Tab Bar Icon")
+      
+        let greeterNavigation = UINavigationController(rootViewController: GreeterController())
+        greeterNavigation.tabBarItem.title = "Greeter"
 
-        viewControllers = [balanceNavigation, transactionsNavigation, sendNavigation, receiveNavigation]
+        viewControllers = [balanceNavigation, transactionsNavigation, sendNavigation, receiveNavigation, greeterNavigation]
     }
 
 }

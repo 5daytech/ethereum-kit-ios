@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GreeterController" customModule="EthereumKitDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="counterLabel" destination="X6e-Jg-qKy" id="cBh-QP-kDK"/>
+                <outlet property="greetField" destination="fU6-V9-Cwn" id="4ij-ho-CwD"/>
+                <outlet property="greetLabel" destination="pzo-1V-PjI" id="G63-cD-edL"/>
+                <outlet property="view" destination="iN0-l3-epB" id="W3e-iR-RMw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-4d-pdT">
+                    <rect key="frame" x="16" y="100.5" width="382" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWQ-27-RTF">
+                            <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
+                            <state key="normal" title="-"/>
+                            <connections>
+                                <action selector="substructAction:" destination="-1" eventType="touchUpInside" id="gYc-Kz-GXt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-Jg-qKy">
+                            <rect key="frame" x="127.5" y="0.0" width="127" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-2l-H4B">
+                            <rect key="frame" x="254.5" y="0.0" width="127.5" height="30"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="addAction:" destination="-1" eventType="touchUpInside" id="BHa-DQ-FAH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARc-Gn-x3t">
+                    <rect key="frame" x="176" y="64" width="62" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzo-1V-PjI">
+                    <rect key="frame" x="185.5" y="210.5" width="43" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter greetings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fU6-V9-Cwn">
+                    <rect key="frame" x="16" y="239" width="382" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-AQ-lno">
+                    <rect key="frame" x="187.5" y="277" width="39" height="30"/>
+                    <state key="normal" title="Greet"/>
+                    <connections>
+                        <action selector="greetAction:" destination="-1" eventType="touchUpInside" id="9LX-0L-50R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ARc-Gn-x3t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="0tf-hA-RuH"/>
+                <constraint firstItem="GhW-AQ-lno" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="LST-pm-jhA"/>
+                <constraint firstItem="GhW-AQ-lno" firstAttribute="top" secondItem="fU6-V9-Cwn" secondAttribute="bottom" constant="8" id="OXK-12-L7y"/>
+                <constraint firstItem="pzo-1V-PjI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Qhg-Fg-BXM"/>
+                <constraint firstItem="Phg-4d-pdT" firstAttribute="top" secondItem="ARc-Gn-x3t" secondAttribute="bottom" constant="16" id="V5V-Pl-KWT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Phg-4d-pdT" secondAttribute="trailing" constant="16" id="YbO-6S-wuW"/>
+                <constraint firstItem="Phg-4d-pdT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cSr-wH-Zcs"/>
+                <constraint firstItem="pzo-1V-PjI" firstAttribute="top" secondItem="Phg-4d-pdT" secondAttribute="bottom" constant="80" id="h1k-rl-sM4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fU6-V9-Cwn" secondAttribute="trailing" constant="16" id="jCN-G0-sv8"/>
+                <constraint firstItem="ARc-Gn-x3t" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="kKz-Hk-rVe"/>
+                <constraint firstItem="fU6-V9-Cwn" firstAttribute="top" secondItem="pzo-1V-PjI" secondAttribute="bottom" constant="8" id="mm4-b8-Ajl"/>
+                <constraint firstItem="fU6-V9-Cwn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="rdL-Um-X8v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
