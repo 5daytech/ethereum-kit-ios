@@ -30,3 +30,9 @@ fastlane/README.md
 # Cuckoo
 
 GeneratedMocks.swift
+
+.rbenv-gemsets
+.ruby-gemset
+.ruby-version
+Gemfile
+Gemfile.lock

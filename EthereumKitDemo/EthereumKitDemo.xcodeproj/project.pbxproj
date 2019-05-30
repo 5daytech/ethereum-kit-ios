@@ -242,6 +242,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 3A3B59CD216B1D81001C5E99;
@@ -464,13 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HC4MCAXJ66;
+				DEVELOPMENT_TEAM = U4R65QQKZ7;
 				INFOPLIST_FILE = EthereumKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.horizontalsystems.EthereumKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.blocksdecoded.EthereumKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -483,13 +484,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HC4MCAXJ66;
+				DEVELOPMENT_TEAM = U4R65QQKZ7;
 				INFOPLIST_FILE = EthereumKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.horizontalsystems.EthereumKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.blocksdecoded.EthereumKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
