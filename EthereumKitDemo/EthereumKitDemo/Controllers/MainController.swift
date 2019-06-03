@@ -24,8 +24,11 @@ class MainController: UITabBarController {
       
         let greeterNavigation = UINavigationController(rootViewController: GreeterController())
         greeterNavigation.tabBarItem.title = "Greeter"
+      
+        let lotteryNavigation = UINavigationController(rootViewController: LotteryController())
+        lotteryNavigation.tabBarItem.title = "Lottery"
 
-        viewControllers = [balanceNavigation, transactionsNavigation, sendNavigation, receiveNavigation, greeterNavigation]
+        viewControllers = [balanceNavigation, greeterNavigation, lotteryNavigation]
     }
 
 }

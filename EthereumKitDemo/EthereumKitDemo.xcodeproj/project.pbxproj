@@ -34,6 +34,8 @@
 		B5B452AB229FED810032BDB8 /* GreeterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B452AA229FED810032BDB8 /* GreeterContract.swift */; };
 		B5B452AD229FEED80032BDB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B452AC229FEED80032BDB8 /* Constants.swift */; };
 		B5B452AF229FF0CE0032BDB8 /* GreeterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B452AE229FF0CE0032BDB8 /* GreeterController.xib */; };
+		B5B452B1229FFCA20032BDB8 /* LotteryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B452B0229FFCA20032BDB8 /* LotteryContract.swift */; };
+		B5B452B322A065430032BDB8 /* LotteryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B452B222A065430032BDB8 /* LotteryController.swift */; };
 		D3927B93226DA95A005094C4 /* BalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3927B91226DA95A005094C4 /* BalanceCell.swift */; };
 		D3927B94226DA95A005094C4 /* BalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3927B92226DA95A005094C4 /* BalanceCell.xib */; };
 		D3927B9A226ED196005094C4 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31362232265A8BC006D8E5C /* EthereumKit.framework */; };
@@ -89,6 +91,8 @@
 		B5B452AA229FED810032BDB8 /* GreeterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterContract.swift; sourceTree = "<group>"; };
 		B5B452AC229FEED80032BDB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5B452AE229FF0CE0032BDB8 /* GreeterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreeterController.xib; sourceTree = "<group>"; };
+		B5B452B0229FFCA20032BDB8 /* LotteryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryContract.swift; sourceTree = "<group>"; };
+		B5B452B222A065430032BDB8 /* LotteryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryController.swift; sourceTree = "<group>"; };
 		D31362212265A8BC006D8E5C /* Erc20Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Erc20Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31362232265A8BC006D8E5C /* EthereumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EthereumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3927B91226DA95A005094C4 /* BalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCell.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				11B354EDEC2F9FDA1699B376 /* ReceiveController.xib */,
 				B5B452A3229FE6810032BDB8 /* GreeterController.swift */,
 				B5B452AE229FF0CE0032BDB8 /* GreeterController.xib */,
+				B5B452B222A065430032BDB8 /* LotteryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				B5B452A8229FEBB90032BDB8 /* BaseContract.swift */,
 				B5B452AA229FED810032BDB8 /* GreeterContract.swift */,
 				B5B452AC229FEED80032BDB8 /* Constants.swift */,
+				B5B452B0229FFCA20032BDB8 /* LotteryContract.swift */,
 			);
 			path = Web3;
 			sourceTree = "<group>";
@@ -348,11 +354,13 @@
 			files = (
 				3A3B5A0A216B2694001C5E99 /* AppDelegate.swift in Sources */,
 				11B350660B53A7EC6F886ECA /* TransactionCell.swift in Sources */,
+				B5B452B322A065430032BDB8 /* LotteryController.swift in Sources */,
 				11B35BDD5F1AC324EB96FBD0 /* MainController.swift in Sources */,
 				11B35DC656DB3BD4D86BDEB6 /* SendController.swift in Sources */,
 				B5B452AB229FED810032BDB8 /* GreeterContract.swift in Sources */,
 				11B355BEC887FD6B4FE563B5 /* WordsController.swift in Sources */,
 				11B353D103BBB08C466FD639 /* ReceiveController.swift in Sources */,
+				B5B452B1229FFCA20032BDB8 /* LotteryContract.swift in Sources */,
 				11B35D187F162D8E4FC4B47D /* TransactionsController.swift in Sources */,
 				11B35F5EDBDF00DC22EE2428 /* BalanceController.swift in Sources */,
 				11B35472281532C7F766AEDB /* Erc20Adapter.swift in Sources */,

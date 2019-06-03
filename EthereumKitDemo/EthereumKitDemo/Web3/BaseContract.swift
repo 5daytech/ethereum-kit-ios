@@ -9,6 +9,7 @@
 import Foundation
 import web3swift
 import EthereumKit
+import BigInt
 
 class BaseContract: IContract {  
   typealias Wallet = EthereumAddress
@@ -23,7 +24,16 @@ class BaseContract: IContract {
     self.wallet = wallet
 
     guard let contractAddressEth = EthereumAddress(contractAddress) else { fatalError("Cannot create contract address") }
-    let web3 = Web3.InfuraRopstenWeb3()
+    
+    let web3: web3
+    switch networkType {
+    case .ropsten:
+      web3 = Web3.InfuraRopstenWeb3()
+    case .kovan:
+      web3 = Web3.InfuraKovanWeb3()
+    default:
+      fatalError()
+    }
     guard let contract = web3.contract(contractAbi, at: contractAddressEth, abiVersion: 2) else { fatalError("Cannot create web3contract") }
     self.contract = contract
 
@@ -55,11 +65,12 @@ class BaseContract: IContract {
 
   func write(methodName: String, params: [AnyObject], ethPrice: String = "0") -> WriteResult {
     let extraData: Data = Data()
+    print(ethPrice)
     let amount = Web3.Utils.parseToBigUInt(ethPrice, units: .eth)
     var transactionOptions: TransactionOptions = TransactionOptions.defaultOptions
     transactionOptions.value = amount
     transactionOptions.from = wallet
-    transactionOptions.gasLimit = .automatic
+    transactionOptions.gasLimit = .manual(BigUInt(148_000))
     transactionOptions.gasPrice = .automatic
     guard let transaction = contract.write(methodName, parameters: params, extraData: extraData, transactionOptions: transactionOptions) else {
       fatalError("Cannot create write transation")
@@ -68,6 +79,7 @@ class BaseContract: IContract {
       let result = try transaction.send()
       return result
     } catch {
+      print(error)
       fatalError("Cannot send transaction")
     }
   }

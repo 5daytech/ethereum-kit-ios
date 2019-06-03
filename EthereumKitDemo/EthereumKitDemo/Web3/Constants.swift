@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
   struct Greeter {
     static let rophstenAddress = "0xCe33730ACc2F00515259D820DCada8f4781428bb"
+    static let kovanAddress = "0x31fc6f53318c462398d4034c22bcc6f0a794d76a"
     static let abi: String = """
 [
   {
@@ -93,6 +94,8 @@ struct Constants {
   }
   
   struct Lottery {
+    static let rophstenAddress = "0xCe33730ACc2F00515259D820DCada8f4781428bb"
+    static let kovanAddress = "0x320ee8776f38b98ffdf137c726a5730964e50234"
     static let abi: String = """
 [
   {

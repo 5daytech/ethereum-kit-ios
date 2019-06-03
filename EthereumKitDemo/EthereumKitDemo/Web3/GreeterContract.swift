@@ -20,6 +20,8 @@ class GreeterContract: BaseContract {
     switch networkType {
     case .ropsten:
       address = Constants.Greeter.rophstenAddress
+    case .kovan:
+      address = Constants.Greeter.kovanAddress
     default:
       fatalError()
     }
@@ -32,6 +34,7 @@ class GreeterContract: BaseContract {
 
   func getCounter() -> Int {
     let res = read(methodName: "getCounter", params: [])
+    print(res)
     let str = String(describing: res["0"]!)
     return Int(str)!
   }
@@ -46,6 +49,7 @@ class GreeterContract: BaseContract {
 
   func greet() -> String {
     let res = read(methodName: "greet", params: [])
+    print(res)
     return String(describing: res["0"]!)
   }
 }

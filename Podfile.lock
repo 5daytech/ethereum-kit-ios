@@ -68,7 +68,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Web3swift.pod:
-    :commit: d8693376805a95f1109aa6866c0925c5eedf0b51
+    :commit: 3e7f20f98d4c18811c5185bf4baf9f2947f3102e
     :git: https://github.com/abaikirov/web3swift.git
 
 SPEC CHECKSUMS:
